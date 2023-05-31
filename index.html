@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8">
+      <script src='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js'></script>
+      <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+      <link rel="stylesheet" href="style.css">
+      <script src="app.js" defer></script>
+      <title>Conference in AI</title>
+   </head>
+   <body>
+      <header>
+         <div id="ham" class="x">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+         <div id="logo"> 
+            <a href="https://www.praguecityuniversity.cz"> <img src="icamedia/pcu.png" alt=""></a>
+         </div>
+         <nav>
+            <ul class="menu">
+               <li><a href="#">Home</a></li>
+               <li><a href="#speaker">Speakers</a></li>
+               <li><a href="#timetable">Timetable</a></li>
+               <li><a href="#location">Location</a></li>
+               <li><a href="#registration-form">Register</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <section class="hero">
+            <h1 class="pulsate">The Future <span>is Now</span></h1>
+            <p>"School of Media and IT Mini Conference in AI"</p>
+            <a href="#registration-form"><button class="grow-btn">Register</button></a> 
+         </section>
+         <section id="about">
+            <div class="about-column">
+               <h2>What's it about ? </h2>
+               <p>Explore the diverse applications of AI, the challenges and opportunities that come with its development, and how it can be leveraged to make a positive impact on society. We look forward to engaging in meaningful conversations that will further the progress of AI and its potential to shape the future. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio dolore vitae dolorum a non. Doloribus possimus, est sit amet reiciendis, accusantium harum rem consequatur quam sapiente consequuntur saepe delectus qui!
+               </p>
+            </div>
+         </section>
+         <section id="speaker">
+            <h2 class="title">Meet the Speakers</h2>
+            <p class="speaker-intro">Top specialists in AI and related topics will be speaking at our conference.Our speakers address a variety of topics that are likely to interest and inspire, from fundamental concepts to cutting-edge applications.  As our distinguished speakers share their knowledge,
+               research, and views, get ready to have your viewpoints pushed and broadened.They will enable you to understand the enormous potential of artificial intelligence and motivate you to explore new boundaries with their captivating lectures and stimulating debates.  
+            </p>
+            <div class="speaker-container">
+               <div class="speaker-box" id="speaker1">
+                  <img src="icamedia/boy1.jpg" alt="">
+                  <h3>Mark Anderson</h3>
+                  <div class="speaker-bio">
+                     <p>Mark Anderson is an expert in the field of AI and has been working in the industry for over 10 years.</p>
+                  </div>
+               </div>
+               <div class="speaker-box" id="speaker2">
+                  <img src="icamedia/girl1.jpg" alt="">
+                  <h3>Sarah Johnson</h3>
+                  <div class="speaker-bio">
+                     <p>Sarah Johnson has a PhD in biomedical engineering and has been researching AI applications in healthcare for over 15 years.</p>
+                  </div>
+               </div>
+               <div class="speaker-box" id="speaker3">
+                  <img src="icamedia/girl2.jpg" alt="">
+                  <h3>Jennifer Williams</h3>
+                  <div class="speaker-bio">
+                     <p>Jennifer Williams is a machine learning engineer at a top tech company and has published numerous research papers on the topic.</p>
+                  </div>
+               </div>
+               <div class="speaker-box" id="speaker4">
+                  <img src="icamedia/boy2.jpg" alt="">
+                  <h3>Andrew Smith</h3>
+                  <div class="speaker-bio">
+                     <p>Andrew Smith is a professor of computer science and has been teaching and researching natural language processing for over 20 years.</p>
+                  </div>
+               </div>
+               <div class="speaker-box" id="speaker5">
+                  <img src="icamedia/girl3.jpg" alt="">
+                  <h3>Rebecca Jones</h3>
+                  <div class="speaker-bio">
+                     <p>Rebecca Jones is a futurist and has been studying the impact of AI on society and the future of work for the past decade.</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="timetable">
+            <h3> What to expect ?</h3>
+            <div class="timetable-grid">
+               <div class="timetable-item hour">8:00am - 9:00am</div>
+               <div class="timetable-item activity">Doors open and registration</div>
+               <div class="timetable-item hour">9:00am - 9:30am</div>
+               <div class="timetable-item activity">Opening remarks</div>
+               <div class="timetable-item hour">9:30am - 10:30am</div>
+               <div class="timetable-item activity">Mark Anderson: Introduction to AI</div>
+               <div class="timetable-item hour">10:30am - 11:30am</div>
+               <div class="timetable-item activity">Sarah Johnson: AI Applications in Healthcare</div>
+               <div class="timetable-item hour">11:30am - 12:30pm</div>
+               <div class="timetable-item activity">Workshop 1: Developing AI Algorithms</div>
+               <div class="timetable-item hour">12:30pm - 13:30pm</div>
+               <div class="timetable-item activity">Lunch</div>
+               <div class="timetable-item hour">13:30pm - 14:30pm</div>
+               <div class="timetable-item activity">Jennifer Williams: Machine Learning</div>
+               <div class="timetable-item hour">14:30pm - 15:30pm</div>
+               <div class="timetable-item activity">Andrew Smith: Natural Language Processing</div>
+               <div class="timetable-item hour">15:30pm - 16:30pm</div>
+               <div class="timetable-item activity">Workshop 2: Implementing AI in Business</div>
+               <div class="timetable-item hour">16:30pm - 17:30pm</div>
+               <div class="timetable-item activity">Rebecca Jones: AI and the Future</div>
+               <div class="timetable-item hour">17:30pm - 18:00pm</div>
+               <div class="timetable-item activity">Closing remarks and networking</div>
+            </div>
+         </section>
+         <section id="location">
+            <div class="location-details">
+               <h3> Come and Join Us! </h3>
+               <p class="loc-details">The conference is being held at:<br>Prague City University<br>City Centre Campus<br>Hybernská 24, Praha 1, Czech Republic <br> Date and Time :  26.5.2023  / 9:00am - 18:00pm  </p>
+            </div>
+            <div id="map"></div>
+         </section>
+         <section id="registration-form">
+            <h3>Experience The Future Now</h3>
+            <p>Join us for an immersive and enlightening experience as we dive deep into the fascinating world of Artificial Intelligence. <br> Whether you're a seasoned professional or just starting your AI journey, this conference is designed to cater to all levels of expertise.</p>
+            <form>
+               <label for="name">Full name:</label>
+               <input type="text" id="name" name="name"><br>
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email"><br>
+               <button type="submit" class="signup-btn">SIGN UP</button>
+            </form>
+         </section>
+      </main>
+      <footer>
+         <div class="left-section">
+          <div class="text">
+            <h3>Any questions?</h3>
+            <p>Phone: <a href="tel:+420222101020">+(420) 222 101 020</a></p>
+            <p>E-mail: <a href="mailto:info@praguecityuniversity.cz">info@praguecityuniversity.cz</a></p>
+            <p>Appointments: <a href="https://www.praguecityuniversity.cz">praguecityuniversity.cz</a></p>
+         </div>
+         <a href="https://www.praguecityuniversity.cz"> <img class="pcu-footer" src="icamedia/pculogo.jpg" alt=""></a>
+         </div>
+         <div class="right-section">
+            <ul class="social-media">
+               <li><a href="https://www.facebook.com/PragueCityUniversity"><img src="icamedia/fb.png" alt="Facebook"></a></li>
+               <li><a href="https://twitter.com/PragueCityUni"><img src="icamedia/twitter.png" alt="Twitter"></a></li>
+               <li><a href="https://www.flickr.com/photos/praguecityuniversity/albums"> <img src="icamedia/flickr.png" alt="Flickr"></a></li>
+               <li><a href="https://www.youtube.com/channel/UCtJM41jXN0JSVFM2pxuAzGw"><img src="icamedia/ytlogo.png" alt="YouTube"></a></li>
+               <li><a href="https://www.instagram.com/praguecityuniversity"><img src="icamedia/ig.png" alt="Instagram"></a></li>
+               <li><a href="https://www.linkedin.com/school/prague-city-university/"><img src="icamedia/linkedin.png" alt="LinkedIn"></a></li>
+            </ul>
+         </div>
+      </footer>
+   </body>
+</html>
